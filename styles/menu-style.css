@@ -42,8 +42,6 @@
     transform: scaleX(1);
 }
   
-
-
 .sub-heading{
     font-size: 3.5em;
 }
@@ -73,4 +71,8 @@
     color: rgba(0, 0, 0, 0.555); 
     padding-left: 3px;
     cursor: pointer;
+}
+
+.weddings-list-item:hover{
+    cursor: not-allowed;
 }
