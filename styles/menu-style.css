@@ -5,7 +5,7 @@
     min-width: 220px;
     height: 100%;
     z-index: 1000;
-    background-color: rgba(255, 255, 255, 0.521);
+    background-color: rgba(255, 255, 255, 0.76);
     padding-top: 50px;
     padding-left: 10px;
     padding-right: 10px;
@@ -73,6 +73,25 @@
     cursor: pointer;
 }
 
-.weddings-list-item:hover{
+.unavailable:hover{
     cursor: not-allowed;
+}
+
+/* --- Contact --- */
+
+.contact-list{
+    margin-top: 65px;
+    list-style: none;
+    padding: 0;
+}
+
+.contact-item{
+    color: rgb(56, 55, 55);
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.contact-icon{
+    width: 12px;
+    margin-right: 5px;
 }

@@ -1,30 +1,13 @@
 
-var dir = "./photos/";
-var fileextension = ".jpg";
-
-console.log("Ajax starting");
-$.ajax({
-    //This will retrieve the contents of the folder if the folder is configured as 'browsable'
-    url: dir,
-    success: function (data) {
-        console.log("Found data");
-        //List all .png file names in the page
-        $(data).find("a:contains(" + fileextension + ")").each(function () {
-            var filename = this.href.replace(window.location.host, "").replace("http://", "");
-            $(".gallery").append(`<div class="gallery-image"><img src="${dir}${filename}"/><svg</div>`)
-        });
-    }
-});
 
 
 $(function() {
     $('.lazy').Lazy();
 });
 
-for(let i = 1; i <= 115; i++){
-    $(".gallery").append(`<div class="gallery-image"><img class="lazy" data-src="./photos/photo-${i}.jpg"/></div>`)
-}
-
+// for(let i = 1; i <= 115; i++){
+//     $(".gallery").append(`<div class="gallery-image"><img class="lazy" data-src="./photos/photo-${i}.jpg"/></div>`)
+// }
 
 
 // --- Modal --- //
