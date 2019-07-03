@@ -2,7 +2,11 @@
 
 
 $(function() {
-    $('.lazy').Lazy();
+    $('.lazy').lazy({
+        effect: "fadeIn",
+        effectTime: 2000,
+        threshold: 0
+    });
 });
 
 // for(let i = 1; i <= 115; i++){
@@ -17,7 +21,6 @@ $(".gallery-image").click(function(event){
 
     $(".main").append(`<div class="modal"></img><img class="modal-img" src=${source}></img></div>`);
     $("body").addClass("modal-open");
-
 })
 
 

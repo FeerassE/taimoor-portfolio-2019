@@ -27,9 +27,9 @@
                         <ul class="menu-list">
                             <a href="index.html"><li class="menu-list-item">Home</li></a>
                             <a href="about.html"><li class="menu-list-item unavailable">About</li></a>
-                            <a href="events.php"><li class="menu-list-item">Events</li></a>
-                            <a href="film.php"><li class="menu-list-item">Film</li></a>
-                            <a href="weddings.php"><li class="menu-list-item">Weddings</li></a>
+                            <a href="events.php"><li class="menu-list-item unavailable">Events</li></a>
+                            <a href="film.php"><li class="menu-list-item unavailable">Film</li></a>
+                            <a href="weddings.php"><li class="menu-list-item unavailable">Weddings</li></a>
                             <a href="gallery.php"><li class="menu-list-item">Gallery</li></a>
                         </ul>
                     </nav>
@@ -59,7 +59,7 @@
                         header('Access-Control-Allow-Origin: *');
                     ?>
                     <?php
-                        $dirname = "./photos/";
+                        $dirname = "./photos/weddings/";
                         $images = glob($dirname."*.jpg");
                         
                         foreach($images as $image) {

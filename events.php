@@ -59,7 +59,7 @@
                         header('Access-Control-Allow-Origin: *');
                     ?>
                     <?php
-                        $dirname = "./photos/";
+                        $dirname = "./photos/events/";
                         $images = glob($dirname."*.jpg");
                         
                         foreach($images as $image) {
